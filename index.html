@@ -45,26 +45,18 @@
       text-decoration: none;
     }
 
-    /* =========================
-       HEADER
-    ========================= */
-
     header {
       position: fixed;
       z-index: 100;
       top: 0;
       left: 0;
       width: 100%;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       padding: 17px 6%;
-
       background: rgba(4, 16, 29, 0.94);
       backdrop-filter: blur(12px);
-
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
@@ -89,7 +81,6 @@
       display: flex;
       align-items: center;
       gap: 28px;
-
       font-size: 12px;
       font-weight: bold;
       letter-spacing: 1px;
@@ -109,20 +100,13 @@
       color: var(--gold-light);
     }
 
-    /* =========================
-       HERO
-    ========================= */
-
     .hero {
       min-height: 850px;
-
       padding: 135px 7% 80px;
-
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
       gap: 50px;
-
       background:
         radial-gradient(
           circle at 10% 20%,
@@ -172,26 +156,22 @@
       color: #d5dde5;
       max-width: 540px;
       font-size: 16px;
+      margin-bottom: 8px;
     }
 
     .hero-button {
       display: inline-block;
-
       margin-top: 28px;
       padding: 15px 25px;
-
       background: linear-gradient(
         135deg,
         var(--gold-light),
         var(--gold)
       );
-
       color: #111c26;
-
       font-size: 12px;
       font-weight: bold;
       letter-spacing: 1.2px;
-
       transition: 0.25s ease;
     }
 
@@ -199,10 +179,6 @@
       transform: translateY(-2px);
       box-shadow: 0 12px 30px rgba(217,169,45,0.25);
     }
-
-    /* =========================
-       FLYER
-    ========================= */
 
     .flyer-container {
       display: flex;
@@ -212,23 +188,13 @@
 
     .flyer-container img {
       display: block;
-
       width: 100%;
       max-width: 540px;
-
       max-height: 680px;
-
       object-fit: contain;
-
       border: 1px solid rgba(246,216,121,0.4);
-
-      box-shadow:
-        0 30px 70px rgba(0,0,0,0.45);
+      box-shadow: 0 30px 70px rgba(0,0,0,0.45);
     }
-
-    /* =========================
-       GENERAL SECTIONS
-    ========================= */
 
     section {
       padding: 100px 8%;
@@ -251,10 +217,6 @@
       color: var(--gold-light);
     }
 
-    /* =========================
-       INTRO
-    ========================= */
-
     .intro {
       max-width: 900px;
       margin: auto;
@@ -268,10 +230,6 @@
       margin: auto;
     }
 
-    /* =========================
-       FEATURES
-    ========================= */
-
     .features {
       background: #06182b;
     }
@@ -279,27 +237,21 @@
     .feature-grid {
       max-width: 1200px;
       margin: 50px auto 0;
-
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-
       gap: 18px;
     }
 
     .feature-card {
       padding: 30px;
-
       min-height: 220px;
-
       border: 1px solid var(--border);
-
       background:
         linear-gradient(
           145deg,
           rgba(255,255,255,0.045),
           rgba(255,255,255,0.015)
         );
-
       transition: 0.25s ease;
     }
 
@@ -312,9 +264,7 @@
       color: var(--gold-light);
       font-family: Georgia, serif;
       font-size: 28px;
-
       padding-bottom: 12px;
-
       border-bottom: 1px solid var(--border);
     }
 
@@ -322,7 +272,6 @@
       color: white;
       font-family: Georgia, serif;
       font-size: 27px;
-
       margin: 18px 0 8px;
     }
 
@@ -331,13 +280,8 @@
       font-size: 14px;
     }
 
-    /* =========================
-       OPPORTUNITIES
-    ========================= */
-
     .opportunities {
       background: #081e34;
-
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
     }
@@ -345,28 +289,21 @@
     .pay-grid {
       max-width: 850px;
       margin: 45px auto 20px;
-
       display: grid;
       grid-template-columns: 1fr 1fr;
-
       gap: 18px;
     }
 
     .pay-card {
       padding: 30px;
-
       text-align: center;
-
       border: 1px solid var(--gold);
-
       background: rgba(0,0,0,0.12);
     }
 
     .pay-card span {
       display: block;
-
       color: var(--gold-light);
-
       font-size: 11px;
       letter-spacing: 2px;
       font-weight: bold;
@@ -374,12 +311,9 @@
 
     .pay-card strong {
       display: block;
-
       color: white;
-
       font-family: Georgia, serif;
       font-size: 45px;
-
       margin: 10px 0;
     }
 
@@ -395,10 +329,6 @@
       margin: auto;
     }
 
-    /* =========================
-       APPLICATION
-    ========================= */
-
     .application {
       background: #040f1d;
     }
@@ -410,11 +340,8 @@
 
     .application-form {
       margin-top: 40px;
-
       padding: 30px;
-
       border: 1px solid var(--border);
-
       background: rgba(255,255,255,0.025);
     }
 
@@ -426,12 +353,9 @@
 
     label {
       display: block;
-
       color: #dfe7ed;
-
       font-size: 12px;
       font-weight: bold;
-
       margin-bottom: 17px;
     }
 
@@ -439,20 +363,15 @@
     select,
     textarea {
       width: 100%;
-
       margin-top: 7px;
-
       padding: 13px 14px;
-
       color: white;
       background: #071a2d;
-
       border: 1px solid #40505f;
-
       font-family: Arial, Helvetica, sans-serif;
       font-size: 14px;
-
       outline: none;
+      border-radius: 0;
     }
 
     input:focus,
@@ -467,44 +386,64 @@
 
     .submit-button {
       border: 0;
-
       padding: 15px 25px;
-
       color: #111c26;
-
       background: linear-gradient(
         135deg,
         var(--gold-light),
         var(--gold)
       );
-
       font-size: 12px;
       font-weight: bold;
       letter-spacing: 1px;
-
       cursor: pointer;
+      transition: 0.25s ease;
+    }
+
+    .submit-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(217,169,45,0.25);
+    }
+
+    .submit-button:disabled {
+      opacity: 0.7;
+      cursor: wait;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .form-message {
+      display: none;
+      margin-top: 20px;
+      padding: 14px;
+      font-size: 13px;
+      font-weight: bold;
+      border: 1px solid var(--border);
+    }
+
+    .form-message.success {
+      display: block;
+      color: var(--gold-light);
+      background: rgba(217,169,45,0.08);
+    }
+
+    .form-message.error {
+      display: block;
+      color: #ffb4b4;
+      background: rgba(180,40,40,0.08);
     }
 
     .form-note {
       color: #738798;
       font-size: 10px;
-
       margin-top: 16px;
     }
 
-    /* =========================
-       FOOTER
-    ========================= */
-
     footer {
       padding: 45px 7%;
-
       text-align: center;
-
       border-top: 1px solid var(--border);
-
       color: #8fa0ae;
-
       font-size: 11px;
     }
 
@@ -513,19 +452,13 @@
       letter-spacing: 2px;
     }
 
-    /* =========================
-       MOBILE
-    ========================= */
-
     @media (max-width: 850px) {
-
       nav {
         display: none;
       }
 
       .hero {
         grid-template-columns: 1fr;
-
         padding-top: 130px;
       }
 
@@ -557,7 +490,6 @@
     }
 
     @media (max-width: 520px) {
-
       header {
         padding: 14px 5%;
       }
@@ -589,10 +521,6 @@
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
-
   <header>
 
     <a href="#top" class="logo">
@@ -611,10 +539,7 @@
 
   <main id="top">
 
-    <!-- =========================
-         HERO
-    ========================== -->
-
+    <!-- HERO -->
     <section class="hero">
 
       <div class="hero-content">
@@ -649,11 +574,6 @@
       </div>
 
 
-      <!--
-        IMPORTANT:
-        Keep your flyer filename exactly as-is.
-      -->
-
       <div class="flyer-container">
 
         <img
@@ -666,10 +586,7 @@
     </section>
 
 
-    <!-- =========================
-         INTRO
-    ========================== -->
-
+    <!-- INTRO -->
     <section class="intro">
 
       <div class="eyebrow">
@@ -689,10 +606,7 @@
     </section>
 
 
-    <!-- =========================
-         WHY JOIN
-    ========================== -->
-
+    <!-- WHY JOIN -->
     <section id="why" class="features">
 
       <div class="center">
@@ -775,10 +689,7 @@
     </section>
 
 
-    <!-- =========================
-         OPPORTUNITIES
-    ========================== -->
-
+    <!-- OPPORTUNITIES -->
     <section id="opportunities" class="opportunities">
 
       <div class="center">
@@ -847,10 +758,7 @@
     </section>
 
 
-    <!-- =========================
-         APPLICATION
-    ========================== -->
-
+    <!-- APPLICATION -->
     <section id="apply" class="application">
 
       <div class="form-container">
@@ -875,19 +783,32 @@
         </div>
 
 
-        <!-- NETLIFY FORM -->
+        <!--
+          NETLIFY FORM
+          IMPORTANT:
+          Keep the form name exactly "career-application".
+        -->
 
         <form
           class="application-form"
           name="career-application"
           method="POST"
           data-netlify="true"
+          id="careerForm"
         >
 
+          <!-- Required for Netlify -->
           <input
             type="hidden"
             name="form-name"
             value="career-application"
+          >
+
+          <!-- Email subject -->
+          <input
+            type="hidden"
+            name="subject"
+            value="New Job Application - James Blondel Financial Services"
           >
 
 
@@ -899,6 +820,7 @@
               <input
                 type="text"
                 name="name"
+                autocomplete="name"
                 required
               >
 
@@ -911,6 +833,7 @@
               <input
                 type="tel"
                 name="phone"
+                autocomplete="tel"
                 required
               >
 
@@ -927,6 +850,7 @@
               <input
                 type="email"
                 name="email"
+                autocomplete="email"
                 required
               >
 
@@ -939,6 +863,7 @@
               <input
                 type="text"
                 name="state"
+                autocomplete="address-level1"
                 required
               >
 
@@ -961,15 +886,15 @@
                   Select
                 </option>
 
-                <option>
+                <option value="Part Time">
                   Part Time
                 </option>
 
-                <option>
+                <option value="Full Time">
                   Full Time
                 </option>
 
-                <option>
+                <option value="Open to Either">
                   Open to Either
                 </option>
 
@@ -981,17 +906,24 @@
             <label>
               Currently licensed?
 
-              <select name="licensed">
+              <select
+                name="licensed"
+                required
+              >
 
-                <option>
+                <option value="">
+                  Select
+                </option>
+
+                <option value="Yes">
                   Yes
                 </option>
 
-                <option>
+                <option value="No">
                   No
                 </option>
 
-                <option>
+                <option value="Not sure">
                   Not sure
                 </option>
 
@@ -1017,9 +949,18 @@
           <button
             type="submit"
             class="submit-button"
+            id="submitButton"
           >
             SUBMIT APPLICATION
           </button>
+
+
+          <div
+            id="formMessage"
+            class="form-message"
+            role="status"
+            aria-live="polite"
+          ></div>
 
 
           <p class="form-note">
@@ -1038,10 +979,7 @@
   </main>
 
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
+  <!-- FOOTER -->
   <footer>
 
     <strong>
@@ -1054,5 +992,42 @@
 
   </footer>
 
-</body>
-        </html>
+
+  <!-- NETLIFY FORM SUBMISSION SCRIPT -->
+  <script>
+    const careerForm = document.getElementById("careerForm");
+    const submitButton = document.getElementById("submitButton");
+    const formMessage = document.getElementById("formMessage");
+
+    careerForm.addEventListener("submit", async function (event) {
+
+      event.preventDefault();
+
+      submitButton.disabled = true;
+      submitButton.textContent = "SUBMITTING...";
+
+      formMessage.className = "form-message";
+      formMessage.textContent = "";
+
+      const formData = new FormData(careerForm);
+
+      try {
+
+        const response = await fetch("/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+          },
+          body: new URLSearchParams(formData).toString()
+        });
+
+        if (!response.ok) {
+          throw new Error("Netlify submission failed");
+        }
+
+        careerForm.reset();
+
+        formMessage.className = "form-message success";
+
+        formMessage.textContent =
+          "Application submitted successfully! Thank you. We will be in touch soon
