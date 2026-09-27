@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>James Blondel | Financial Services</title>
+
+  <meta
+    name="description"
+    content="James Blondel Financial Services — opportunities, support and professional growth."
+  >
+
+  <style>
+    :root {
+      --navy: #06182b;
+      --navy-light: #0b2946;
+      --gold: #d9a92d;
+      --gold-light: #f6d879;
+      --cream: #f7f1e4;
+      --white: #ffffff;
+      --muted: #aab7c4;
+      --border: rgba(246, 216, 121, 0.28);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--navy);
+      color: var(--cream);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 17px 6%;
+
+      background: rgba(4, 16, 29, 0.94);
+      backdrop-filter: blur(12px);
+
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .logo {
+      color: var(--gold-light);
+      font-family: Georgia, serif;
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    .logo small {
+      display: block;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 9px;
+      letter-spacing: 4px;
+      margin-top: -2px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      transition: 0.25s ease;
+    }
+
+    nav a:hover {
+      color: var(--gold-light);
+    }
+
+    nav a:last-child {
+      padding: 10px 17px;
+      border: 1px solid var(--gold);
+      color: var(--gold-light);
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 850px;
+
+      padding: 135px 7% 80px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 50px;
+
+      background:
+        radial-gradient(
+          circle at 10% 20%,
+          rgba(217,169,45,0.14),
+          transparent 28%
+        ),
+        linear-gradient(
+          135deg,
+          var(--navy),
+          var(--navy-light)
+        );
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .eyebrow {
+      color: var(--gold-light);
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 4px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      color: white;
+      font-family: Georgia, serif;
+      font-size: clamp(60px, 8vw, 105px);
+      line-height: 0.83;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 span {
+      color: var(--gold-light);
+    }
+
+    .hero-subtitle {
+      color: var(--gold-light);
+      font-family: Georgia, serif;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      color: #d5dde5;
+      max-width: 540px;
+      font-size: 16px;
+    }
+
+    .hero-button {
+      display: inline-block;
+
+      margin-top: 28px;
+      padding: 15px 25px;
+
+      background: linear-gradient(
+        135deg,
+        var(--gold-light),
+        var(--gold)
+      );
+
+      color: #111c26;
+
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1.2px;
+
+      transition: 0.25s ease;
+    }
+
+    .hero-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(217,169,45,0.25);
+    }
+
+    /* =========================
+       FLYER
+    ========================= */
+
+    .flyer-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flyer-container img {
+      display: block;
+
+      width: 100%;
+      max-width: 540px;
+
+      max-height: 680px;
+
+      object-fit: contain;
+
+      border: 1px solid rgba(246,216,121,0.4);
+
+      box-shadow:
+        0 30px 70px rgba(0,0,0,0.45);
+    }
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
+
+    section {
+      padding: 100px 8%;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .section-title {
+      color: white;
+      font-family: Georgia, serif;
+      font-size: clamp(48px, 6vw, 75px);
+      line-height: 0.9;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    .section-title span {
+      color: var(--gold-light);
+    }
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    .intro {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .intro p {
+      color: var(--muted);
+      font-size: 17px;
+      max-width: 720px;
+      margin: auto;
+    }
+
+    /* =========================
+       FEATURES
+    ========================= */
+
+    .features {
+      background: #06182b;
+    }
+
+    .feature-grid {
+      max-width: 1200px;
+      margin: 50px auto 0;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+    .feature-card {
+      padding: 30px;
+
+      min-height: 220px;
+
+      border: 1px solid var(--border);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,0.045),
+          rgba(255,255,255,0.015)
+        );
+
+      transition: 0.25s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold);
+    }
+
+    .feature-number {
+      color: var(--gold-light);
+      font-family: Georgia, serif;
+      font-size: 28px;
+
+      padding-bottom: 12px;
+
+      border-bottom: 1px solid var(--border);
+    }
+
+    .feature-card h3 {
+      color: white;
+      font-family: Georgia, serif;
+      font-size: 27px;
+
+      margin: 18px 0 8px;
+    }
+
+    .feature-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       OPPORTUNITIES
+    ========================= */
+
+    .opportunities {
+      background: #081e34;
+
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pay-grid {
+      max-width: 850px;
+      margin: 45px auto 20px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 18px;
+    }
+
+    .pay-card {
+      padding: 30px;
+
+      text-align: center;
+
+      border: 1px solid var(--gold);
+
+      background: rgba(0,0,0,0.12);
+    }
+
+    .pay-card span {
+      display: block;
+
+      color: var(--gold-light);
+
+      font-size: 11px;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    .pay-card strong {
+      display: block;
+
+      color: white;
+
+      font-family: Georgia, serif;
+      font-size: 45px;
+
+      margin: 10px 0;
+    }
+
+    .pay-card small {
+      color: #aebdca;
+    }
+
+    .disclaimer {
+      color: #718496;
+      font-size: 10px;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* =========================
+       APPLICATION
+    ========================= */
+
+    .application {
+      background: #040f1d;
+    }
+
+    .form-container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .application-form {
+      margin-top: 40px;
+
+      padding: 30px;
+
+      border: 1px solid var(--border);
+
+      background: rgba(255,255,255,0.025);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    label {
+      display: block;
+
+      color: #dfe7ed;
+
+      font-size: 12px;
+      font-weight: bold;
+
+      margin-bottom: 17px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+
+      margin-top: 7px;
+
+      padding: 13px 14px;
+
+      color: white;
+      background: #071a2d;
+
+      border: 1px solid #40505f;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+
+      outline: none;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--gold);
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .submit-button {
+      border: 0;
+
+      padding: 15px 25px;
+
+      color: #111c26;
+
+      background: linear-gradient(
+        135deg,
+        var(--gold-light),
+        var(--gold)
+      );
+
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+
+      cursor: pointer;
+    }
+
+    .form-note {
+      color: #738798;
+      font-size: 10px;
+
+      margin-top: 16px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 45px 7%;
+
+      text-align: center;
+
+      border-top: 1px solid var(--border);
+
+      color: #8fa0ae;
+
+      font-size: 11px;
+    }
+
+    footer strong {
+      color: var(--gold-light);
+      letter-spacing: 2px;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 850px) {
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+
+        padding-top: 130px;
+      }
+
+      .hero-content {
+        text-align: center;
+        margin: auto;
+      }
+
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .flyer-container img {
+        max-width: 560px;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .pay-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+
+      header {
+        padding: 14px 5%;
+      }
+
+      .hero {
+        padding-left: 6%;
+        padding-right: 6%;
+      }
+
+      section {
+        padding-left: 6%;
+        padding-right: 6%;
+      }
+
+      .hero h1 {
+        font-size: 67px;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .application-form {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header>
+
+    <a href="#top" class="logo">
+      JB
+      <small>FINANCIAL SERVICES</small>
+    </a>
+
+    <nav>
+      <a href="#why">WHY JOIN</a>
+      <a href="#opportunities">OPPORTUNITIES</a>
+      <a href="#apply">APPLY NOW</a>
+    </nav>
+
+  </header>
+
+
+  <main id="top">
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          FINANCIAL SERVICES INDUSTRY
+        </div>
+
+        <h1>
+          We're<br>
+          <span>Hiring.</span>
+        </h1>
+
+        <div class="hero-subtitle">
+          Build your future.
+        </div>
+
+        <p>
+          Real people. Real support. Real opportunities.
+        </p>
+
+        <p>
+          Explore flexible opportunities, professional development
+          and a team environment designed to help you build valuable
+          skills and work toward your goals.
+        </p>
+
+        <a href="#apply" class="hero-button">
+          START YOUR APPLICATION
+        </a>
+
+      </div>
+
+
+      <!--
+        IMPORTANT:
+        Keep your flyer filename exactly as-is.
+      -->
+
+      <div class="flyer-container">
+
+        <img
+          src="file_00000000b2a081f5a74c15c6eb0a7e47.png"
+          alt="James Blondel Financial Services flyer"
+        >
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <section class="intro">
+
+      <div class="eyebrow">
+        YOUR NEXT CHAPTER
+      </div>
+
+      <h2 class="section-title">
+        More than a job.<br>
+        <span>It's a lifestyle.</span>
+      </h2>
+
+      <p>
+        Build skills, expand your knowledge and explore an
+        opportunity that can fit into the life you're creating.
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         WHY JOIN
+    ========================== -->
+
+    <section id="why" class="features">
+
+      <div class="center">
+
+        <div class="eyebrow">
+          WHY JOIN?
+        </div>
+
+        <h2 class="section-title">
+          Build. Learn.
+          <span>Grow.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <div class="feature-number">01</div>
+          <h3>Flexible Schedule</h3>
+          <p>
+            Create a schedule around your priorities,
+            where the position allows.
+          </p>
+        </div>
+
+
+        <div class="feature-card">
+          <div class="feature-number">02</div>
+          <h3>Supportive Team</h3>
+          <p>
+            Learn alongside people who are developing
+            their own professional goals.
+          </p>
+        </div>
+
+
+        <div class="feature-card">
+          <div class="feature-number">03</div>
+          <h3>Growth Potential</h3>
+          <p>
+            Develop skills and work toward personal
+            and professional goals.
+          </p>
+        </div>
+
+
+        <div class="feature-card">
+          <div class="feature-number">04</div>
+          <h3>Work From Anywhere</h3>
+          <p>
+            Explore flexible work arrangements
+            where available.
+          </p>
+        </div>
+
+
+        <div class="feature-card">
+          <div class="feature-number">05</div>
+          <h3>Real Skills</h3>
+          <p>
+            Build communication, leadership,
+            financial and business skills.
+          </p>
+        </div>
+
+
+        <div class="feature-card">
+          <div class="feature-number">06</div>
+          <h3>Training</h3>
+          <p>
+            Get guidance as you learn the business
+            and understand the opportunity.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         OPPORTUNITIES
+    ========================== -->
+
+    <section id="opportunities" class="opportunities">
+
+      <div class="center">
+
+        <div class="eyebrow">
+          AVAILABLE POSITIONS
+        </div>
+
+        <h2 class="section-title">
+          Find your
+          <span>lane.</span>
+        </h2>
+
+        <p style="color:#aab7c4;">
+          Discuss current roles, licensing, compensation
+          and expectations during the application process.
+        </p>
+
+      </div>
+
+
+      <div class="pay-grid">
+
+        <div class="pay-card">
+
+          <span>
+            PART TIME
+          </span>
+
+          <strong>
+            $2K–$4K
+          </strong>
+
+          <small>
+            PER MONTH*
+          </small>
+
+        </div>
+
+
+        <div class="pay-card">
+
+          <span>
+            FULL TIME
+          </span>
+
+          <strong>
+            $6K–$10K+
+          </strong>
+
+          <small>
+            PER MONTH*
+          </small>
+
+        </div>
+
+      </div>
+
+
+      <p class="disclaimer">
+        *Promotional ranges shown for reference.
+        Actual compensation varies by role, licensing,
+        production, experience and other factors.
+      </p>
+
+    </section>
+
+
+    <!-- =========================
+         APPLICATION
+    ========================== -->
+
+    <section id="apply" class="application">
+
+      <div class="form-container">
+
+        <div class="center">
+
+          <div class="eyebrow">
+            TAKE THE NEXT STEP
+          </div>
+
+          <h2 class="section-title">
+            Let's build
+            <span>together.</span>
+          </h2>
+
+          <p style="color:#aab7c4;">
+            Tell us a little about yourself and we'll
+            follow up with information about available
+            opportunities.
+          </p>
+
+        </div>
+
+
+        <!-- NETLIFY FORM -->
+
+        <form
+          class="application-form"
+          name="career-application"
+          method="POST"
+          data-netlify="true"
+        >
+
+          <input
+            type="hidden"
+            name="form-name"
+            value="career-application"
+          >
+
+
+          <div class="form-row">
+
+            <label>
+              Name
+
+              <input
+                type="text"
+                name="name"
+                required
+              >
+
+            </label>
+
+
+            <label>
+              Phone
+
+              <input
+                type="tel"
+                name="phone"
+                required
+              >
+
+            </label>
+
+          </div>
+
+
+          <div class="form-row">
+
+            <label>
+              Email
+
+              <input
+                type="email"
+                name="email"
+                required
+              >
+
+            </label>
+
+
+            <label>
+              State
+
+              <input
+                type="text"
+                name="state"
+                required
+              >
+
+            </label>
+
+          </div>
+
+
+          <div class="form-row">
+
+            <label>
+              Position
+
+              <select
+                name="position"
+                required
+              >
+
+                <option value="">
+                  Select
+                </option>
+
+                <option>
+                  Part Time
+                </option>
+
+                <option>
+                  Full Time
+                </option>
+
+                <option>
+                  Open to Either
+                </option>
+
+              </select>
+
+            </label>
+
+
+            <label>
+              Currently licensed?
+
+              <select name="licensed">
+
+                <option>
+                  Yes
+                </option>
+
+                <option>
+                  No
+                </option>
+
+                <option>
+                  Not sure
+                </option>
+
+              </select>
+
+            </label>
+
+          </div>
+
+
+          <label>
+            Message
+
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Tell us a little about yourself..."
+            ></textarea>
+
+          </label>
+
+
+          <button
+            type="submit"
+            class="submit-button"
+          >
+            SUBMIT APPLICATION
+          </button>
+
+
+          <p class="form-note">
+            By submitting, you are requesting information
+            about available opportunities. Licensing,
+            eligibility, compensation and position details
+            will be discussed during the application process.
+          </p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <strong>
+      JAMES BLONDEL • FINANCIAL SERVICES
+    </strong>
+
+    <br><br>
+
+    Freedom • Opportunity • Financial Growth
+
+  </footer>
+
+</body>
+        </html>
